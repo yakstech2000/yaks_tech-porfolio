@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#111826"/>
+  <g fill="none" stroke="#2bd9c9" stroke-opacity="0.3" stroke-width="1.5">
+    <circle cx="400" cy="225" r="90"/>
+    <rect x="150" y="150" width="150" height="150" rx="12"/>
+    <rect x="500" y="150" width="150" height="150" rx="12"/>
+  </g>
+  <text x="60" y="410" font-family="JetBrains Mono, monospace" font-size="20" fill="#5c6a83">
+    Project preview — replace this placeholder image
+  </text>
+</svg>

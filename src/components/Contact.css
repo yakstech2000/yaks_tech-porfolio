@@ -1,0 +1,122 @@
+.contact {
+  background: var(--color-bg-alt);
+  border-top: 1px solid var(--color-border);
+}
+
+.contact-inner {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: var(--space-5);
+}
+
+.contact-list {
+  margin-top: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.contact-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.95rem;
+}
+
+.contact-list li span:first-child {
+  color: var(--color-text-faint);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.contact-list li a {
+  color: var(--color-text);
+  transition: color 0.18s ease;
+}
+
+.contact-list li a:hover {
+  color: var(--color-accent-bright);
+}
+
+.contact-form {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-row label {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.form-row input,
+.form-row textarea {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 0.9rem;
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  resize: vertical;
+  transition: border-color 0.18s ease;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+  border-color: var(--color-accent-bright);
+}
+
+.form-row input:disabled,
+.form-row textarea:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-row input[aria-invalid='true'],
+.form-row textarea[aria-invalid='true'] {
+  border-color: var(--color-error);
+}
+
+.form-error {
+  font-size: 0.8rem;
+  color: var(--color-error);
+}
+
+.contact-submit {
+  align-self: flex-start;
+  margin-top: 0.4rem;
+}
+
+.contact-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.contact-confirm {
+  font-size: 0.88rem;
+  color: var(--color-signal);
+  margin-top: 0.6rem;
+}
+
+.contact-confirm-error {
+  color: var(--color-error);
+}
+
+@media (max-width: 860px) {
+  .contact-inner {
+    grid-template-columns: 1fr;
+  }
+}
